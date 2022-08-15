@@ -1,0 +1,14 @@
+sequelize
+
+membuat tabel : const user = sequelize.define() =>{'nama tabel',{nama kolom : typedatanya}}
+lalu user.async() untuk dibuat tablemya
+kalau user.async({alter:true}) untuk mengupdate table dan tidak akan membuat table baru kalau ternyata tablenya sudah ada
+kalau user.async({force:true}) untuk mengupdate table dan membuat table baru , serta menghapus table lama
+freezeTableName : true, untuk membuat nama kolom tabel sesuai yang kita define.
+
+membuat queries 
+user.create() : semacam insert into untuk mengisi values kolom
+user.findAll() : semacam select * from untuk melihat table
+user.destroy() : delete
+
+
