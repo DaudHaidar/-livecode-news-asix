@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+// @import '~bootstrap/scss/bootstrap.scss';  // cara 1
+$enigmaColor:#233d90;
+
+.bg-enigma{
+    background-color:$enigmaColor;
+}
+
+.img-enigma{
+    width: 100px;
+}
+
+.text-enigma{
+    color: #233d90;
+}
+
+.btn-enigma{
+    background: $enigmaColor;
+    color: #fff;
+}

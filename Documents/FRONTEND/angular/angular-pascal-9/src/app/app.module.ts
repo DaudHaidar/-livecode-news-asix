@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { SampleSampleComponent } from './sample/sample-sample/sample-sample.component';
+import { SharedModule } from './shared/shared.module';
 
 
 
@@ -14,6 +15,7 @@ import { SampleSampleComponent } from './sample/sample-sample/sample-sample.comp
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     PagesModule
   ],
   providers: [],

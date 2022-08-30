@@ -1,0 +1,12 @@
+.about-tittle{
+    font-size: 2rem;
+}
+
+.about-tittle::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #233d90;
+    width: 100px;
+    bottom: -5px;
+}

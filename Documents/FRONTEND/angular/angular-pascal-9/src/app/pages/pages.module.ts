@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { ResourcesComponent } from './resources/resources.component';
-import { FooterComponent } from './footer/footer.component';
-import { NextStepComponent } from './next-step/next-step.component';
-import { HighlightComponent } from './highlight/highlight.component';
+import { AboutComponent } from './master-home/about/about.component';
+import { PagesComponent } from './pages.component';
+import { MasterHomeModule } from './master-home/master-home.module';
+
 
 const component = [
-  HeaderComponent,
-  ResourcesComponent,
-  FooterComponent,
-  NextStepComponent,
-  HighlightComponent,
+  AboutComponent
 ]
 
 @NgModule({
-  declarations: [...component],
+  declarations: [
+    PagesComponent
+],
   imports: [
-    CommonModule
+    CommonModule,
+    MasterHomeModule
   ],
-  exports:[...component]
+  exports:[
+    PagesComponent
+  ]
 })
 export class PagesModule { }
