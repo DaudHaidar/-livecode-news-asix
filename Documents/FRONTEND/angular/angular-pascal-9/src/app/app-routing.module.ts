@@ -1,13 +1,19 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
+import { HomeComponent } from './pages/master-home/home/home.component';
 import { ChildAComponent } from './sample-rout/component-a/child-a/child-a.component';
 import { ChildBComponent } from './sample-rout/component-a/child-b/child-b.component';
 import { ComponentAComponent } from './sample-rout/component-a/component-a.component';
 import { ComponentBComponent } from './sample-rout/component-b/component-b.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
+import { ResumeComponent } from './shared/components/resume/resume.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+    {
+        path:'home', component: HomeComponent
+    },
+    {
     path: 'component-a', component: ComponentAComponent, children:[
         {
         path: 'child-a', component: ChildAComponent
@@ -19,7 +25,9 @@ const routes: Routes = [{
 },{
     path: 'component-b', component: ComponentBComponent
 },{
-    path: '', redirectTo: 'component-a' ,pathMatch: 'full'
+    path: '', redirectTo: 'home' ,pathMatch: 'full'
+},{
+    path: 'resume', component: ResumeComponent
 },{
     path: '**', component: NotFoundComponent
 }]; 
