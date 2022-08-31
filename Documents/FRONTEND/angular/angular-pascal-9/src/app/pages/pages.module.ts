@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutComponent } from './master-home/about/about.component';
 import { PagesComponent } from './pages.component';
 import { MasterHomeModule } from './master-home/master-home.module';
+import { ArticleComponent } from './article/article.component';
 
 
 const component = [
@@ -11,7 +12,8 @@ const component = [
 
 @NgModule({
   declarations: [
-    PagesComponent
+    PagesComponent,
+    ArticleComponent
 ],
   imports: [
     CommonModule,

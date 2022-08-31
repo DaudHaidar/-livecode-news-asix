@@ -7,7 +7,7 @@ import { ChildBComponent } from './sample-rout/component-a/child-b/child-b.compo
 import { ComponentAComponent } from './sample-rout/component-a/component-a.component';
 import { ComponentBComponent } from './sample-rout/component-b/component-b.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
-import { ResumeComponent } from './shared/components/resume/resume.component';
+
 
 const routes: Routes = [
     {
@@ -26,8 +26,6 @@ const routes: Routes = [
     path: 'component-b', component: ComponentBComponent
 },{
     path: '', redirectTo: 'home' ,pathMatch: 'full'
-},{
-    path: 'resume', component: ResumeComponent
 },{
     path: '**', component: NotFoundComponent
 }]; 
